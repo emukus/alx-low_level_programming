@@ -15,7 +15,7 @@ int main(void)
 			continue;
 		else if (alphabet == 'e')
 			continue;
-		
+
 		putchar(alphabet);
 	}
 
