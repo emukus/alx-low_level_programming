@@ -6,25 +6,21 @@
  * Return: Always 0 (Successful/correct code)
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
-	void print_alphabet_x10(void)
+	int i;
+	
+	for (i = 0; i < 10; i++)
 	{
-		int i;
-
-		for (i = 0; i < 10; i++)
+		char alphabet = 'a';
+		
+		while (alphabet < 'z')
 		{
-			char alphabet = 'a';
-
-			while (alphabet < 'z')
-			{
-				_putchar(alphabet);
-			}
-
-			_putchar('\n');
+			_putchar(alphabet);
 		}
+		
+		_putchar('\n');
 	}
-	return (0);
 }
 
 
