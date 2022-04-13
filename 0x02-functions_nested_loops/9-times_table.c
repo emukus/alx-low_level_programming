@@ -16,7 +16,7 @@ void times_table(void)
 	{
 		b = 0;
 
-		while (b <=9)
+		while (b <= 9)
 		{
 			multiple = a * b;
 			if (b == 0)
