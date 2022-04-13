@@ -6,7 +6,7 @@
  * Return: Always 0 (Successful/correct code)
  */
 
-int print_last_digit(int n);
+int print_last_digit(int n)
 {
 	int last;
 
