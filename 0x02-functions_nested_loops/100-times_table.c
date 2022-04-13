@@ -3,7 +3,7 @@
 /**
  * main - main block
  * @n: times table to use
- * mult: multiple of two integers
+ * print_times_table - prints the n times table, starting with 0
  * Return: Always 0
  */
 
