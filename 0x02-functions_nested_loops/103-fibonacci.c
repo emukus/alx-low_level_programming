@@ -14,12 +14,12 @@ int main(void)
 	while (1)
 	{
 		fibsum = fib1 + fib2;
-		if (fibum > 400000)
+		if (fibsum > 400000)
 			break;
 		if ((fibsum % 2) == 0)
 			tot_sum += fibsum;
 		fib1 = fib2;
-		fib2 = fibsum:
+		fib2 = fibsum;
 	}
 	printf("%0.f\n", tot_sum);
 
