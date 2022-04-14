@@ -1,11 +1,6 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 
-/**
- * Description: contains the prototypes of all the functions for this project
- *
- */
-
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
