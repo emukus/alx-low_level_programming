@@ -1,1 +1,1 @@
-C Programming Intro
+Pointers, arrays and Strings
