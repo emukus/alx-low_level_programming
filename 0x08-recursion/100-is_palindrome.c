@@ -30,7 +30,7 @@ int compare(char *s, int l)
 		return (1);
 
 	if (*s == *(s + (l - 1)))
-		return (compare(s + 1 l - 2));
+		return (compare(s + 1, l - 2));
 
 	else
 		return (0);
