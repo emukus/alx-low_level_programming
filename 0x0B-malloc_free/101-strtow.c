@@ -30,7 +30,7 @@ void free_grid(int **grid, int height)
 
 char **strtow(char *str)
 {
-	char **aout;
+	char **ptr;
 	unsigned int c, height, i, j, a1;
 
 	if (str == NULL || *str == '\0')
@@ -38,10 +38,10 @@ char **strtow(char *str)
 	for (c = height = 0; str[c] != '\0'; c++)
 		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 			height++;
-	aout = malloc((height + 1) * sizeof(char *));
-	if (aout == NULL || height == 0)
+	ptr = malloc((height + 1) * sizeof(char *));
+	if (ptr == NULL || height == 0)
 	{
-		free(aout);
+		free(ptr);
 		return (NULL);
 	}
 	for (i = a1 = 0; i < height; i++)
@@ -52,19 +52,19 @@ char **strtow(char *str)
 				a1++;
 			if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 			{
-				aout[i] = malloc((c - a1 + 2) * sizeof(char));
-				if (aout[i] == NULL)
+				ptr[i] = malloc((c - a1 + 2) * sizeof(char));
+				if (ptr[i] == NULL)
 				{
-					free_grid(aout, i);
+					free_grid(ptr, i);
 					return (NULL);
 				}
 				break;
 			}
 		}
 		for (j = 0; a1 <= c; a1++, j++)
-			aout[i][j] = str[a1];
-		aout[i][j] = '\0';
+			ptr[i][j] = str[a1];
+		ptr[i][j] = '\0';
 	}
-	aout[i] = NULL;
-	return (aout);
+	ptr[i] = NULL;
+	return (ptr);
 }
