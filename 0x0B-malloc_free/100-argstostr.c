@@ -9,7 +9,7 @@
  * Return: NULL if ac == 0 or av == NULL
  */
 
-char *argstostr(int ac, int **av)
+char *argstostr(int ac, char **av)
 {
 	char *str;
 	int count = 0, i, j, k = 0;
@@ -20,7 +20,7 @@ char *argstostr(int ac, int **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
-			len++;
+			count++;
 	}
 	count += ac;
 
