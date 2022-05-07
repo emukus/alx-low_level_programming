@@ -2,15 +2,14 @@
 #include <stdlib.h>
 
 /**
- * free_grid - function that frees a 2d grid previously created
- * by alloc_grid function
- * @grid: the 2d array to be freed
- * @height: height of the grid
+ * _ch_free_grid - function that frees a 2d array
+ * @grid: 2d array of char
+ * @height: height of array
  *
- * Return: free grid
+ * Return: nothing
  */
 
-void free_grid(int **grid, int height)
+void _ch_free_grid(char **grid, int height)
 {
 	int index;
 
@@ -55,7 +54,7 @@ char **strtow(char *str)
 				ptr[i] = malloc((c - a1 + 2) * sizeof(char));
 				if (ptr[i] == NULL)
 				{
-					free_grid(ptr, i);
+					_ch_free_grid(ptr, i);
 					return (NULL);
 				}
 				break;
