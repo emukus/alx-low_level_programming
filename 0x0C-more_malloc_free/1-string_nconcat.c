@@ -10,7 +10,7 @@
  * Return: pointer to newly allocated space in memory
  */
 
-char *string_noncat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
 	unsigned int i, size1 = 0, size2 = 0;
