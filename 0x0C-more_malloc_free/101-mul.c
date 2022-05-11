@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * _print - moves a string one place to the left and prints the string
+ * lprint - moves a string one place to the left and prints the string
  * @str: string to move
  * @l: size of string
  *
  * Return: void
  */
-void _print(char *str, int l)
+void lprint(char *str, int l)
 {
 	int i, j;
 
@@ -142,6 +142,6 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 	}
-	_print(a, ln - 1);
+	lprint(a, ln - 1);
 	return (0);
 }
