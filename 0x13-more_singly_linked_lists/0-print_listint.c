@@ -1,14 +1,13 @@
 #include "lists.h"
 
 /**
- * print_listint - function that prints all the elments of a listint_t
- *		list
+ * print_listint - function that prints all the elments of a listint_t list
  * @h: pointer to the first node of listint_t
  *
  * Return: the number of nodes
  */
 
-size_t print_listint(const linstint_t *h)
+size_t print_listint(const listint_t *h)
 {
 	size_t nodes = 0;
 
