@@ -2,7 +2,7 @@
 
 /**
   * binary_search - function that searches for a value in a sorted array
-  *                 of integers using Binary search.
+  *                 of integers using the Binary search algorithm.
   * @array: ptr to the first element of the array to search.
   * @size: no. of elements in the array.
   * @value: the value to search for.
